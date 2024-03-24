@@ -1,23 +1,16 @@
-# AWS S3 Bucket to host a static website
+# Azure create RG Groupe
 
 - Terraform module which creates an S3 bucket that can host a static website
 
 ## Usage
 
 ```hcl
-module "website" {
-  source = "github.com/yemisprojects/s3_website_module_demo//s3-hosted-website-bucket?ref=v0.0.1"
-  
-  bucket_name = "demo-bucket-111"
-
-  create_random_suffix = true
-  environment = "staging"
-
-  tags = {
-    Terraform = "true"
-  }
-
+module "terraform_azure_modul_demo" {
+  source = "github.com/dimi4ik/terraform_azure_modul_demo"
 }
+
+
+
 ```
 
 ### Generate Random bucket names
